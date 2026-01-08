@@ -1,8 +1,8 @@
 package com.xfrage.xclient;
 
 import com.xfrage.xclient.module.ModuleManager;
-import com.xfrage.xclient.module.types.CoordinatesModule;
-import com.xfrage.xclient.module.types.FPSModule;
+import com.xfrage.xclient.module.types.user.CoordinatesModule;
+import com.xfrage.xclient.module.types.user.FPSModule;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

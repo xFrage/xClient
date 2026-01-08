@@ -1,4 +1,4 @@
-package com.xfrage.xclient.module.types;
+package com.xfrage.xclient.module.types.user;
 
 import com.xfrage.xclient.module.Module;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElement;
@@ -14,7 +14,7 @@ public class CoordinatesModule extends Module {
     private final MinecraftClient mc = MinecraftClient.getInstance();
 
     public CoordinatesModule() {
-        super("Coordinates", true);
+        super("Coordinates", "User", true);
 
         HudElement element = new HudElement() {
             @Override

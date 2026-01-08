@@ -1,4 +1,4 @@
-package com.xfrage.xclient.module.types;
+package com.xfrage.xclient.module.types.user;
 
 import com.xfrage.xclient.module.Module;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElement;
@@ -16,7 +16,7 @@ public class FPSModule extends Module {
     private long lastTime;
 
     public FPSModule() {
-        super("FPS", true);
+        super("FPS", "User", true);
         lastTime = System.currentTimeMillis();
         HudElement element = new HudElement() {
             @Override

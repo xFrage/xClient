@@ -3,10 +3,12 @@ package com.xfrage.xclient.module;
 public abstract class Module {
 
     private final String name;
+    private final String category; // performance, user, etc.
     private boolean enabled;
 
-    protected Module(String name, boolean defaultEnabled) {
+    protected Module(String name, String category, boolean defaultEnabled) {
         this.name = name;
+        this.category = category;
         this.enabled = defaultEnabled;
         if (enabled) onEnable();
     }
@@ -14,6 +16,8 @@ public abstract class Module {
     public String getName() {
         return name;
     }
+
+    public String getCategory() { return category; }
 
     public boolean isEnabled() {
         return enabled;
