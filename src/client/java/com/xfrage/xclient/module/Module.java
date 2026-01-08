@@ -5,8 +5,10 @@ public abstract class Module {
     private final String name;
     private boolean enabled;
 
-    protected Module(String name) {
+    protected Module(String name, boolean defaultEnabled) {
         this.name = name;
+        this.enabled = defaultEnabled;
+        if (enabled) onEnable();
     }
 
     public String getName() {

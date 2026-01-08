@@ -10,7 +10,7 @@
 			"com.xfrage.xclient.xClient"
 		],
 		"client": [
-			"com.xfrage.xclient.xClientInit"
+			"com.xfrage.xclient.Main"
 		]
 	},
 	"depends": {
